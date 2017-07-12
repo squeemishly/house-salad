@@ -2,4 +2,37 @@ Total: <%= @result.count %> Results<br>
 
 <table class="members">
 <% @result.each do |member| %>
+  <tr class="name">
+    <td>
+      Name:
+    </td>
+    <td>
+      <%= member[:name] %>
+    </td>
+  </tr>
+  <tr class="role">
+    <td>
+      Role:
+    </td>
+    <td>
+      <%= member[:role] %>
+    </td>
+  </tr>
+  <tr class="party">
+    <td>
+      Party:
+    </td>
+    <td>
+      <%= member[:party] %>
+    </td>
+  </tr>
+  <tr class="district">
+    <td>
+      District:
+    </td>
+    <td>
+      <%= member[:district] %>
+    </td>
+  </tr>
+<% end %>
 </table>
