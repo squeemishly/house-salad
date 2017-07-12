@@ -6,9 +6,9 @@ RSpec.describe "a user can see members of the house for their state" do
     # When I visit "/"
     visit '/'
     # And I select "Colorado" from the dropdown
-    select "Colorado", from: "search"
+    select "Colorado", from: "state"
     # And I click on "Locate Members from the House"
-    click_on "Locate Members from the House"
+    click_on "Locate Members of the House"
     # Then my path should be "/search" with "state=CO" in the parameters
     expect(current_path).to eq "/search"
     # And I should see a message "7 Results"
